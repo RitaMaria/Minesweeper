@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html lang="pt">
+
+<!-- ====================================================================== -->
+<!-- ITW 2021/2022 Grupo 66                                                 -->
+<!-- Filipe Dávila Fernandes, Nº 55981, PL26                                -->
+<!-- Rita Rodrigues, Nº 54859, PL26                                         -->
+<!-- ====================================================================== -->
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="estilos/main.css" type="text/css">
+    <link rel="stylesheet" href="estilos/layout.css" type="text/css">
+    <link rel="stylesheet"  href="https://fonts.googleapis.com/css?family=Tangerine">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+    <script src="js/main.js"></script>
+    <title>Minesweeper - Tutorial</title>
+</head>
+
+<body>
+    <nav>
+        <ul>
+            <li ><a href="index.html">Minesweeper</a></li>
+            <li><a href="quickGame.html">Jogar</a></li>
+            <li class="active"><a href="tutorial.html">Tutorial</a></li>
+            <li><a href="ranking.html">Ranking</a></li>
+            <li><a href="sobrenos.html">Sobre Nós</a></li>
+            <li class="right"><div class="user"><a id="username"></a><span class="profile"></span></div></li>
+        </ul>
+    </nav>
+    <article>
+        <!--https://pt.wikipedia.org/wiki/Campo_minado-->
+        <section class="tutorial" >
+            <h1> Tutorial</h1>
+            <h2 class="headingTutorial">Regras do jogo</h2>
+            <p> A área de jogo consiste num campo de quadrados retangular. <br>
+                Cada quadrado pode ser revelado clicando sobre ele, e se o quadrado clicado contiver uma mina, então o jogo acaba. <br>
+                Se, por outro lado, o quadrado não contiver uma mina, uma de duas coisas poderá acontecer:</p>
+            <ol>
+                <li>Um número aparece, indicando a quantidade de quadrados adjacentes que contêm minas;</li>
+                <li>Nenhum número aparece. Neste caso, o jogo revela automaticamente os quadrados que se encontram adjacentes ao quadrado vazio, já que não podem conter minas;</li>
+            </ol>
+            <p>O jogo é ganho quando todos os quadrados que não têm minas são revelados. <br>
+                Opcionalmente, o jogador pode marcar qualquer quadrado que acredita que contém uma mina com uma bandeira, bastando para isso clicar sobre ele com o botão direito do rato.</p> <br>
+
+            <h3 class="headingTutorial">Origem e curiosidades históricas</h3>
+            <!--http://www.minesweeperonline.net/history.php-->
+            <p>
+                Minesweeper foi criado pela Windows.
+                Robert Donner e Curtis Johnson, que trabalhavam para a Microsoft, escreveram e desenvolveram o jogo para ser lançado
+                no Microsoft Entertainment Pack para Windows 3.1 em 1990.
+                O jogo foi atualizado em 1992.
+                Tal como muitos dos jogos do Windows, foi desenvolvido por um motivo maior do que simplesmente entreter os utilizadores:
+                o objetivo seria ensinar a utilizar um rato.
+                Os controlos simples de Minesweeper: um clique esquerdo para as minas e um direito para colocar a bandeira deram
+                ao utilizador uma oportunidade para se familiarizarem com um dispositivo que se tornaria um recurso essencial em todos os PC's.
+                Ainda hoje é um jogo bastante popular.
+            </p>
+            <h3 class="headingTutorial">Opções Jogo</h3>
+
+            <p> Na pagina principal encontras um menu de jogo onde podes selecionar os seguintes tipos:</p>
+            <ol>
+                <li><h6  class="headingTutorial">Quick Game</h6 >
+                    <ul>
+                        <li>Permite-te jogar um jogo rapido com as opções padrão de jogo</li>
+                    </ul>
+                </li>
+                <li><h6  class="headingTutorial">SinglePlayer</h6 >
+                    <ul>
+                        <li>Este Modo de Jogo singular permite-te selecionar opções para o jogo como o nome de jogador
+                           , numero de celulas do jogo e o nivel de dificuldade do mesmo. Também podes fazer upload do teu avatar</li>
+                    </ul>
+                </li>
+                <li><h6 class="headingTutorial">Multiplayer</h6>
+                    <ul>
+                        <li>Este Modo de Jogo Multiplayer permite-te jogar com um amigo, ao selecionares esta opção podes escolher o nome dos jogadores
+                            e outras opções relacionadas com a dificuldade do jogo e numero de linhas e colunas. Também podem fazer upload do vosso avatar</li>
+                    </ul>
+                </li>
+                <li><h6  class="headingTutorial">Ranking</h6 >
+                    <ul>
+                        <li>Este modo permite visualizar a lista de melhores pontuações </li>
+                    </ul>
+                </li>
+            </ol>
+        </section>
+        <div class="regras">
+            <section class="instructions">
+                <h6 class="headingTutorial">Icons do Jogo</h6>
+                <ul>
+                    <li>Mina<img src="img/mine.png" alt="mina"></li>
+                    <li>Bandeira<img src="img/portuguese-flag.png" alt="Bandeira vermelha"></li>
+                    <li>Incognita<img src="img/question32px.png" alt="Bandeira vermelha"></li>
+                    <li>Reset Jogo<img src="img/smile.png" alt="Reset Jogo"></li>
+                    <li>Troféu<img src="img/icons8-trofeu-20.png" alt="Troféu"></li>
+                    <li> Explosão<img src="img/explosion.png" alt="Explosão"></li>
+                    <li>Desligar Som<img src="img/sound-off.png" alt="Desligar Som"></li>
+                </ul>
+            </section>
+            <aside class="videoTutorial" >
+                <iframe src="https://www.youtube.com/embed/pw9CM2dD64c" title="YouTube video player" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+            </aside>
+        </div>
+    </article>
+    <footer>
+        <p> &copy; Filipe, Rita</p>
+    </footer>
+</body>
+</html>

@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="pt">
+
+<!-- ====================================================================== -->
+<!-- ITW 2021/2022 Grupo 66                                                 -->
+<!-- Filipe Dávila Fernandes, Nº 55981, PL26                                -->
+<!-- Rita Rodrigues, Nº 54859, PL26                                         -->
+<!-- ====================================================================== -->
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="estilos/main.css" type="text/css">
+    <link rel="stylesheet" href="estilos/layout.css" type="text/css">
+    <link rel="stylesheet"  href="https://fonts.googleapis.com/css?family=Tangerine">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+    <script src="js/main.js"></script>
+    <script src="js/ranking.js"></script>
+    <title>Minesweeper - Ranking</title>
+</head>
+
+<body>
+    <nav class="navigation">
+        <ul>
+            <li ><a href="index.html">Minesweeper</a></li>
+            <li><a href="quickGame.html">Jogar</a></li>
+            <li><a href="tutorial.html">Tutorial</a></li>
+            <li class="active"><a href="ranking.html">Ranking</a></li>
+            <li><a href="sobrenos.html">Sobre Nós</a></li>
+            <li class="right"><div class="user"><a id="username"></a><span class="profile"></span></div></li>
+        </ul>
+    </nav>
+    <article>
+        <select name="opcaoEstatistica" id="selEstatistica">
+            <option selected>Selecione Estatística</option>
+            <option>Number Of Games</option>
+            <option>Total Time</option>
+            <option>My Best Times </option>
+            <option>TOP10 SinglePlayer</option>
+            <option>TOP10 Multiplayer</option>
+        </select>
+        <article>
+            <div id="titleBox"></div>
+            <div id="rankingBox" class="ranking" ></div>
+        </article>
+    </article>
+    <footer>
+        <p> &copy; Filipe, Rita</p>
+    </footer>
+</body>
+</html>

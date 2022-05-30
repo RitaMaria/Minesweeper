@@ -1,0 +1,797 @@
+/* ------------------------------------------------------------------------- */
+/* ITW 2021/2022 Grupo 66                                                    */
+/* Filipe Dávila Fernandes, Nº 55981, PL26                                   */
+/* Rita Rodrigues, Nº 54859, PL26                                            */
+/* ------------------------------------------------------------------------- */
+
+:root {
+
+    --game_button_reset_background_image:url("../img/smile64px.png");
+
+    --game_cell_explosion_effect1:url("../img/mine32px.png");
+    --game_menu_background_image_Active:url("../img/explosion24px.png");
+    --game_cells_flag_image: url("../img/portugal24px.png");
+    --game_cells_question_image:url("../img/question24px.png");
+}
+
+/*--------------  Ranking TOP 10 Box window ----------*/
+#rankingBox{
+    order: 0;
+    display: flex;
+    justify-content: center;
+    width: fit-content;
+    min-width: 80vw;
+    width: fit-content;
+}
+.rankingWindow{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    align-self: center;
+    padding:20px;
+    box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2);
+    margin-bottom: 20px;
+    width: 80vw;
+}
+
+.gameResult{
+    width: 100%;
+    order:0;
+    text-align: center;
+    background-color: var(--ranking_th_background_color);
+    color: #ffffff;
+    font-size: 4vh;
+    height: auto;
+}
+.gameResult span{
+    font-size: 5vh;
+}
+
+.optionRanking{
+    width: 80%;
+    order:4;
+    display: flex;
+    justify-content:space-evenly;
+    flex-direction: row;
+}
+.optionRanking button{
+    padding: 2vh;
+    font-size: 4vh;
+    width: fit-content;
+
+
+}
+
+
+
+
+
+
+
+
+select{
+    align-self: center;
+    font-size: 3vh;
+    width: 90vw;
+
+}
+
+option{
+    font-size: small;
+    width: auto;
+
+}
+
+.optionEstatistica{
+    width: auto;
+    font-size: small;
+}
+
+
+.right{
+    float: right;
+
+
+
+
+
+}
+.user{
+    display: flex;
+    justify-self: right;
+}
+#username {
+    padding-right: 2vh;
+    font-size: 5vh;
+    color: white;
+}
+.profile {
+    width: 5vh;
+    height: 5vh;
+    padding: 0;
+    background-image: url("../img/profile.png");
+}
+
+
+
+.loginTittle span{
+    font-size: 4vh;
+}
+#player1, #player2{
+    font-size: 4vh;
+
+
+}
+.login {
+    align-self: center;
+}
+.titleTypeOfRanking{
+    font-size: 4vh;
+}
+#frmLogin{
+    align-self: center;
+    width: 90vw;
+    order: 0;
+
+    padding-bottom: 2vh;
+}
+#frmLogin input {
+    height: 10vh;
+    font-size: 4vh;
+}
+#frmLogin span {
+    font-size: 4vh;
+}
+#frmLogin label,#frmLogin button {
+    font-size: 4vh;
+}
+
+article, main{
+    overflow: scroll;
+    text-align: center;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    align-content: center;
+    flex-direction: column;
+    height: fit-content;
+    width: 100vw;
+    min-height: 75vh;
+
+}
+article td,article th{
+    font-size:4vh ;
+}
+
+nav{
+    width: 100vw;
+    order: 0;
+
+
+}
+
+
+article h1, article h2{
+    font-size: 5vh;
+}
+/* Menu principal Grid position */
+
+
+/* Menu principal Grid position */
+nav li {
+    float: left;
+    font-size: 5vh;
+    padding: 1%;
+}
+
+
+.caixa{
+    order:1;
+    padding: 0;
+    margin:0;
+    width: 100vw;
+    display: none;
+}
+
+/* Menu Escolha de tipo de jogo Grid position */
+.modos_jogo{
+    display: flex;
+    flex-direction: row;
+    padding: 0;
+    margin: 0;
+
+    order:1;
+    justify-content: center;
+    align-self: center;
+    justify-self: center;
+    min-width: 100vw;
+    width: 100vw;
+
+
+
+}
+
+/* ######## Escolha Tipo de Jogo  ################# */
+
+/* Botão Mina */
+
+.mine{
+
+    background-size:contain;
+    justify-content: center;
+    align-items: center;
+    display: flex;
+    width:10vh;
+    height:10vh ;
+    background-origin: padding-box;
+    box-shadow: inset hsla(0,0%,15%,  1) 0  0px 0px 1px, /* border */
+    inset hsla(0,0%,15%, .8) 0 -1px 5px 2px, /* soft SD */
+    inset hsla(0,0%,0%, .25) 0 -1px 0px 3px, /* bottom SD */
+    inset hsla(0,0%,100%,.7) 0  2px 1px 3px, /* top HL */
+
+    hsla(0,0%, 0%,.15) 0 -2px 3px 2px, /* outer SD */
+    hsla(0,0%,100%,.5) 0  2px 3px 2px; /* outer HL */
+}
+
+
+.mine:active {
+    width:10vh;
+    height:10vh ;
+    background-image: url("../img/explosion.png");
+    background-repeat: no-repeat;
+    transform: scale(0.99);
+    background-origin: content-box;
+    opacity: 0.8;
+
+    display: flex;
+    justify-content: space-around;
+    background-position: center;
+    background-color: rgba(0, 0, 0, 0.9);
+
+
+
+}
+
+.gamelabel {
+    font-family: "Ubuntu Condensed";
+    font-weight: bold;
+    font-size:4vh;
+}
+/* Tamanho de Celulas do Jogo */
+.celula{
+    box-shadow: inset 0.2em 0.2em 0.2em 0 rgba(255,255,255,0.5), inset -0.2em -0.2em 0.2em 0 rgba(0,0,0,0.5);
+
+    width: 6vh;
+    height: 6vh;
+}
+.openedCell{
+    width: 6vh;
+    height: 6vh;
+}
+
+
+/* -------------------------------------------------------------------------------------
+
+--------------------- Css Responsividade JOGO -----------------
+
+-----------------------------------------------------------------------------------*/
+
+
+/* ----- Escolha difficuldade do jogo -----------*/
+#formGameTypeSp{
+    width: 90vw;
+
+}
+#formGameTypeSp span{
+    font-size: 5vh;
+
+}
+radioDifficultyGame{
+    display: flex;
+    flex-direction: row;
+}
+.radioDifficultyGame label{
+    font-size: 5vh;
+}
+
+input[type=radio] {
+    border: 0px;
+    width: 100%;
+    height: 2em;
+}
+
+/* Caixa que contem o Jogo SinglePlayer Posição em grid  */
+.gridGame {
+
+    display: flex;
+    width:fit-content ;
+    justify-content: center;
+    align-items: center;
+    padding: 4vh;
+    margin: 10px auto;
+    box-shadow: inset 0.2em 0.2em 0.2em 0 rgba(255,255,255,0.5), inset -0.2em -0.2em 0.2em 0 rgba(0,0,0,0.5);
+
+}
+
+.menu_jogo{
+
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+
+
+}
+.display_info_label{
+    padding: 1vh;
+
+}
+.gameDisplayInfo {
+    font-size: 6vh;
+
+}
+
+
+.time {
+    order: 0;
+
+
+}
+
+.divPoints{
+    order:0;
+}
+/** Botão de restart com smilley*/
+.buttonStart{
+    order:1;
+    width: 8vh;
+    height: 8vh;
+
+    margin: 2vw;
+    box-shadow: inset 0.2em 0.2em 0.2em 0 rgba(255,255,255,0.5), inset -0.2em -0.2em 0.2em 0 rgba(0,0,0,0.5);
+    background-color: lightgray;
+    background-origin: padding-box;
+    background-size:contain;
+}
+.divTime{
+
+    order:3
+
+}
+.divWin{
+    display: flex;
+    justify-content: center;
+
+    order:1;
+}
+.divMute{
+    display: flex;
+    order:2;
+}
+.mute{
+    width: 8vh;
+    height: 8vh;
+
+
+}
+.soundOn{
+    width: 8vh;
+    height: 8vh;
+
+
+}
+.divBombs{
+    order:2;
+}
+.bombCell {
+    background-size: cover;
+}
+
+.points{
+    order: 2;
+    margin-left: 10vh;
+
+    margin-bottom: 5px;
+
+
+    font-size: 6vh;
+}
+.gameStatus{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    width: fit-content;
+    margin: 0 auto;
+
+
+
+}
+
+.downbar {
+    display: flex;
+    flex-direction: row;
+    justify-content:space-evenly;
+
+
+    width: 100%;
+
+
+
+}
+
+.trophy{
+    order:0;
+    padding: 4vh;
+    margin: 0;
+}
+#aviso {
+
+font-size: 3vh;
+}
+
+.win{
+    order: 1;
+    height: 6vw;
+    font-size: 5vw;
+}
+
+.numberBombs {
+    font-size: large;
+}
+
+
+
+
+/*  ---------------##################   custom Game SinglePlayer  ##############-------------------------------- */
+.customContainer {
+    grid-column-start:1 ;
+    grid-column-end:2 ;
+    grid-row-start: 2;
+    display: flex;
+
+    align-content: center;
+
+}
+.customContainer table {
+    font-size: large;
+    border-spacing:5vh;
+    margin:8px;
+}
+.customContainer td{
+
+    font-family: 'Ubuntu Condensed', sans-serif;
+
+}
+/* ----------------- Tutorial ---------------------*/
+
+.tutorial{
+
+    justify-content: center;
+    text-align: justify;
+    padding-left: 20px;
+    padding-right: 20px;
+    width: fit-content;
+    grid-row-start: 2;
+    margin: 0 auto;
+
+
+
+
+}
+
+
+.regras{
+    padding: 0;
+    margin: 0;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+    text-align: justify;
+
+    width: 100vw;
+
+    margin: 0 auto;
+
+}
+
+.tutorial h1 ,.regras h1{
+    font-size: 6vh;
+
+}
+
+.tutorial h2, .regras h2  {
+    font-size: 5vh;
+}
+
+.tutorial p,.regras p,.regras h3,.tutorial li,.tutorial h3, .regras td,.regras th{
+
+    font-size: 4vh;
+}
+
+iframe{
+
+    box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2);
+    margin: 0;
+    width: 70vh;
+    height: 50vh;
+    padding: 3vh;
+}
+
+.regras li{
+    font-size: 5vh;
+}
+.instructions{
+
+    order:0;
+
+}
+
+
+/* ----------------- Ranking ---------------------*/
+
+
+.ranking{
+
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+
+    height: 100%;
+    width: 100%;
+}
+
+#rankingBox th {
+    font-size: 4vh;
+}
+
+
+#rankingBox  td {
+    font-size: 6vh;
+}
+
+.title{
+    text-align: center;
+
+    grid-row-start:1;
+
+    width: 100%;
+
+}
+/**  Registro de Utilizadores */
+#frmRegisto{
+
+    width: 50vw;
+}
+
+#frmRegisto input{
+    height: 7vh;
+    font-size: 7vh;
+}
+#frmRegisto label{
+    text-align: left;
+    font-size: 4vh;
+
+
+}
+#frmRegisto select{
+     width: fit-content;
+
+
+
+ }
+#frmRegisto option{
+    text-align: center;
+
+}
+
+ .genero{
+  display: flex;
+    justify-content: space-between;
+
+}
+
+
+/* ----------------- Quem Somos ---------------------*/
+.container h2{
+    font-size: 6vh;
+
+}
+
+.perfilContainer{
+
+    display: flex;
+    justify-content: space-around;
+    flex-direction: row;
+
+
+
+}
+.headingTutorial span{
+    font-size: 5vh;
+
+}
+.perfilContainer p {
+    font-size: 5vh;
+    text-align: center;
+    font-family:"Ubuntu Condensed";
+}
+
+
+
+.wrapperCard{
+    align-self: center;
+
+    width: 50vh;
+    margin: 5vh;
+    box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2);
+
+
+
+
+
+}
+.perfil{
+
+    display: flex;
+    justify-content: space-around;
+
+
+}
+
+.perfil img{
+
+
+    width: 40vh;
+
+
+}
+.descricão{
+    font-size: 5vh ;
+    text-align: center;
+    width: 100%;
+
+}
+.textoContainer p{
+    font-size: 6vh;
+
+    text-align: justify;
+}
+.textoContainer{
+    width: 80vw;
+    margin: 0 auto;
+    padding: 0;
+    justify-self: center;
+
+
+    grid-column-start: 2;
+    grid-column-end: 10;
+    grid-row-start:4;
+
+
+}
+
+
+/* Perfil do utilizador*/
+
+.wrapperCard li{
+    font-size:5vh;
+
+}
+.wrapperCard h3{
+    font-size:5vh;
+
+}
+.wrapperCard span{
+    font-size:6vh;
+
+}
+article button, main button{
+    justify-items: right;
+    font-size: 8vh;
+    width: fit-content;
+}
+.logoutButton{
+
+    display: flex;
+
+    justify-content: right;
+}
+/**  User profile */
+
+.wrapperCardProfile{
+
+    align-self: center;
+
+    width: 70vw;
+    height: 65vh;
+    margin: 5vh;
+    box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2);
+
+}
+/** campos do perfil */
+.wrapperCardProfile h3{
+    text-align: center;
+    font-size: 6vh;
+
+}
+/** campos do perfil */
+.wrapperCardProfile li{
+    text-align: justify;
+    font-size: 6vh;
+
+}
+/** dados do utilizador */
+.wrapperCardProfile span{
+    text-align: justify;
+    font-size: 4vh;
+
+}
+/** botão de logout*/
+.wrapperCardProfile button{
+
+    text-align: justify;
+    font-size: 4vh;
+
+}
+/* register */
+.genero  {
+    display: flex;
+    height: 20vh;
+
+    flex-direction: row;
+
+}
+.faixaEtaria{
+    height: 20vh;
+}
+.genero  input[type=radio] {
+    display: flex;
+    height: 5vh;
+    flex-direction: row;
+
+}
+#btnFazerRegisto {
+    font-size: 6vh;
+
+}
+.genero label{
+    text-align: right;
+    font-size: 4vh;
+
+}
+
+
+    /* Local na grid para o footer */
+
+footer{
+    order:6;
+    padding: 0;
+    margin-top: 3vh;
+    display: flex;
+    justify-content: center;
+    z-index: 1;
+
+
+    width: 100vw;
+
+}
+.flagCell{
+    background-size: 6vh 6vh;
+
+}
+.interrogation{
+    background-size: 6vh 6vh;
+}
+.bombCell{
+    background-size: 6vh 6vh;
+}
+.divTimesWon{
+    display: flex;
+    flex-direction: row;
+
+    justify-content: center;
+
+}
+footer p{
+    font-size:5vh;
+}

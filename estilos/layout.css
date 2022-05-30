@@ -1,0 +1,14 @@
+/* ------------------------------------------------------------------------- */
+/* ITW 2021/2022 Grupo 66                                                    */
+/* Filipe Dávila Fernandes, Nº 55981, PL26                                   */
+/* Rita Rodrigues, Nº 54859, PL26                                            */
+/* ------------------------------------------------------------------------- */
+
+@charset "UTF-8";
+@import "./layout-xs-portrait.css" screen and (orientation: portrait) and (max-width: 560px);
+
+@import "./layout-xs-landscape.css" screen and (orientation: landscape) and (max-height: 560px);
+
+@import "./layout-m.css" screen and (min-width: 561px) and (max-width: 1199px) ;
+
+@import "./layout-xl.css" screen  and (min-width: 1200px);

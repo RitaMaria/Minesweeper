@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="pt">
+
+<!-- ====================================================================== -->
+<!-- ITW 2021/2022 Grupo 66                                                 -->
+<!-- Filipe Dávila Fernandes, Nº 55981, PL26                                -->
+<!-- Rita Rodrigues, Nº 54859, PL26                                         -->
+<!-- ====================================================================== -->
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="estilos/main.css" type="text/css">
+    <link rel="stylesheet" href="estilos/layout.css" type="text/css">
+    <link rel="stylesheet"  href="https://fonts.googleapis.com/css?family=Tangerine">
+
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+    <script src="js/main.js"></script>
+    <script src="js/login.js"></script>
+
+
+    <title>Minesweeper - Start Page</title>
+</head>
+<body>
+    <nav>
+        <ul>
+            <li class="active"><a href="index.html">Minesweeper</a></li>
+            <li><a href="quickGame.html">Jogar</a></li>
+            <li><a href="tutorial.html">Tutorial</a></li>
+            <li><a href="ranking.html">Ranking</a></li>
+            <li><a href="sobrenos.html">Sobre Nós</a></li>
+            <li class="right"><div class="user"><a id="username"></a><span class="profile"></span></div></li>
+        </ul>
+    </nav>
+    <main>
+        <form  class="login" id="frmLogin">
+            <div class="loginTittle">
+                <span> Login </span>
+            </div>
+            <div class="loginName">
+                    <label for="nomeLogin">Nome:</label>
+                    <input id="nomeLogin" type="text" name="nomeLogin" required maxlength="40" size="10">
+
+           </div>
+
+                <div class="loginPassword">
+                    <label for="passLogin">Password:</label>
+                    <input type="password"  class="form-control" name="passLogin" id="passLogin">
+                </div>
+
+
+            <div class="loginButtons">
+                <button class="buttonStyle" id="btnFazerLogin" type="button">Login</button>
+                <button class="buttonStyle" id="btnIrRegisto" type="button">Registar
+                </button>
+
+            </div>
+
+            <p id="infoLogin" class="centrado"></p>
+        </form>
+
+        <div class="modos_jogo" >
+            <a class="mine " href="quickGame.html" tabindex="0" aria-label="Quick Game">
+               <span class="gamelabel"> Quick-Game </span>
+
+            </a>
+            <a class="mine " href="./singlePlayer.html" aria-label="Single Player - Seleciona Dificuldade">
+                <span class="gamelabel">  Singleplayer</span>
+            </a>
+
+            <a class="mine " href="multiPlayer.html" aria-label="MultiPlayer Player - Seleciona Dificuldade e Adversário">
+          <span class="gamelabel">
+                Multiplayer</span> 
+            </a>
+
+
+            <a  class="mine " href="./ranking.html" aria-label="Várias Listas de Rankings">
+
+                <span class="gamelabel"> Ranking</span>
+
+            </a>
+        </div>   
+
+    </main>
+    <footer>
+        <p> &copy; Filipe, Rita</p>
+    </footer>
+</body>
+</html>

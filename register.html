@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="pt">
+
+<!-- ====================================================================== -->
+<!-- ITW 2021/2022 Grupo 66                                                 -->
+<!-- Filipe Dávila Fernandes, Nº 55981, PL26                                -->
+<!-- Rita Rodrigues, Nº 54859, PL26                                         -->
+<!-- ====================================================================== -->
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="estilos/main.css" type="text/css">
+    <link rel="stylesheet" href="estilos/layout.css" type="text/css">
+    <link rel="stylesheet"  href="https://fonts.googleapis.com/css?family=Tangerine">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+    <script src="js/register.js"></script>
+    <script src="js/main.js"></script>
+    <title>Minesweeper - Register</title>
+</head>
+<body>
+    <div class="container">
+        <nav class="navigation"> 
+            <ul>
+                <li ><a href="index.html">Minesweeper</a></li>
+                <li><a href="quickGame.html">Jogar</a></li>
+                <li><a href="tutorial.html">Tutorial</a></li>
+                <li><a href="ranking.html">Ranking</a></li>
+                <li><a href="sobrenos.html">Sobre Nós</a></li>
+                <li class="right"><a id="username"></a></li>
+            </ul>
+        </nav>   
+        <article>
+            <form id="frmRegisto">
+                <div>
+                    <div>
+                        <label for="nome">Nome:</label>
+                        <input id="nome" type="text" name="nome" required maxlength="40" size="10">
+                    </div>
+                    <div class="col">
+                        <label for="email">Email:</label>
+                        <input type="text" class="form-control" id="email" name="email">
+                    </div>
+                </div>
+                <div>
+                    <div>
+                        <label for="password">Password:</label>
+                        <input type="password"  class="form-control" name="password" id="password" required>
+                    </div>
+                    <div>
+                        <label for="password2">Repita sua Password:</label>
+                        <input type="password"  class="form-control" name="password2" id="password2" required>
+                    </div>
+                </div>
+                    <label for="selFaixaEtaria">Faixa Etária</label>
+                    <select name="faixaEtaria" id="selFaixaEtaria" required multiple>
+                        <option value="5-10">5 a 10 anos</option>
+                        <option value="10-15">10 a 15 anos</option>
+                        <option value="15-20">15 a 20 anos</option>
+                        <option value="20-25">20 a 25 anos</option>
+                        <option value="25-35">25 a 35 anos</option>
+                        <option value="35-50">35 a 50 anos</option>
+                        <option value="+50">mais de 50 anos</option>
+                    </select>
+                    <label for="selFaixaEtaria">Tema</label>
+                    <select name="tema" id="theme" required multiple>
+                        <option value="default">Default</option>
+                        <option value="lightTheme">Light</option>
+                        <option value="darkTheme">Dark</option>
+                        <option value="woodTheme">Wood</option>
+                        <option value="neonTheme">Neon</option>
+                    </select>
+                <div class="genero">
+                    <label for="chkMasculino">Masculino</label>
+                    <input id="chkMasculino" type="radio" name="genero" value="Masculino" required>
+                    <label for="chkFeminino">Feminino</label>
+                    <input id="chkFeminino" type="radio" name="genero" value="Feminino" required>
+                    <label for="chkOutro">Outro</label>
+                    <input id="chkOutro" type="radio" name="genero" value="Outro" required>
+                </div>
+                <div class="divButton">
+                    <button class="buttonStyle" id="btnFazerRegisto" type="button">Registar</button>
+                </div>
+            </form>
+        </article>
+    <footer>
+       <p> &copy; Filipe, Rita</p>
+    </footer>
+    </div>
+
+</body>
+</html>
