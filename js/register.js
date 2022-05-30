@@ -133,7 +133,6 @@ function obtemDadosJogador() {
             genero = g.value;
         }
     }
-
     let tema = $("#theme").val();
 
 
